@@ -11,9 +11,14 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
   else {
     //header("Location: http://localhost/guessinggame/game.php");
     $stored_hash = '0705cde14466b539c035931e60643f8f';
-    $md5 = hash('md5', 'XyZzy12*php123');
+    $md5 = hash('md5', "XyZzy12*$password");
+    //$md5 = hash('md5', "XyZzy12*php123");
+    echo $md5;
     if($md5 != $stored_hash) {
       echo "Incorrect password";
+    }
+    else {
+      header("Location: http://localhost/phpworkshop/w3/game.php?name=".urlencode($_POST['username']));
     }
   }
 }
@@ -21,6 +26,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
 
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -36,3 +42,20 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
