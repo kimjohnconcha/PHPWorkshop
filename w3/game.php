@@ -4,8 +4,6 @@ session_start();
 
 $result = "";
 
-
-
 function check($computer, $human) {
   $names = array("Rock", "Paper", "Scissors");
 
@@ -53,7 +51,9 @@ if(isset($_POST["play"])) {
 
 
 if(isset($_POST["logout"])) {
-  header('Location: http://localhost/phpworkshop/w3/');
+  //http://kimconchaphpworkshop.herokuapp.com/w3/login.php
+  //http://localhost/phpworkshop/w3/
+  header('Location: http://kimconchaphpworkshop.herokuapp.com/w3/');
   session_unset(); 
   session_destroy();
 }

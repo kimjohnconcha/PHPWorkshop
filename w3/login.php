@@ -19,7 +19,9 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     }
     else {
       $_SESSION["username"] = $username;
-      header("Location: http://localhost/phpworkshop/w3/game.php?username=".urlencode($_POST['username']));
+      //http://kimconchaphpworkshop.herokuapp.com/w3/login.php
+      //http://localhost/phpworkshop/w3/game.php?username=".urlencode($_POST['username'])
+      header("Location: http://kimconchaphpworkshop.herokuapp.com/w3/game.php?username=".urlencode($_POST['username']));
     }
   }
 }
