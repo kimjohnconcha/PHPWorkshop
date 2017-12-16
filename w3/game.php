@@ -87,8 +87,8 @@ else {
 <option value="2">Scissors</option>
 <option value="3">Test</option>
 </select>
-<input type="submit" name="play" value="Play">
-<input type="submit" name="logout" value="Logout">
+<input type="submit" name="play" class="btn btn-primary" value="Play">
+<input type="submit" name="logout" class="btn btn-primary" value="Logout">
 <pre><?php echo $result ?></pre>
 </form>
 </body>
