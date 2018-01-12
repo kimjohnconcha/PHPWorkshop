@@ -73,6 +73,7 @@ else {
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <title>Kim Concha R-P-S</title>
 </head>
 <body>
@@ -86,8 +87,8 @@ else {
 <option value="2">Scissors</option>
 <option value="3">Test</option>
 </select>
-<input type="submit" name="play" value="Play">
-<input type="submit" name="logout" value="Logout">
+<input type="submit" name="play" class="btn btn-primary" value="Play">
+<input type="submit" name="logout" class="btn btn-primary" value="Logout">
 <pre><?php echo $result ?></pre>
 </form>
 </body>
