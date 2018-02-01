@@ -14,11 +14,11 @@ if(isset($_POST["logout"])) {
 //if (isset($_GET["username"])) {
 if (isset($_SESSION["username"])) {
   if(isset($_SESSION["username"])== "") {
-    die("Name parameter missing");
+    die("Not logged in");
   }
 }
 else {
-  die("Name parameter missing");
+  die("Not logged in");
 }
 
 if ( isset($_SESSION['success']) ) {
